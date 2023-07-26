@@ -1,25 +1,26 @@
 # Databricks notebook source
 # DBTITLE 1,Create Notebook Widgets
 # notebook source
+dbutils.widgets.removeAll()
 # dbutils.widgets.remove("source")
-# dbutils.widgets.dropdown("source", "git", ["git", "workspace"])
+dbutils.widgets.dropdown("source", "git", ["git", "workspace"])
 
-# # shared single node cluster id
+# shared single node cluster id
 # dbutils.widgets.remove("shared_single_node_cluster")
-# dbutils.widgets.dropdown("shared_single_node_cluster", "0223-201818-urkj98oc", ["0223-201818-urkj98oc", "0404-172316-bj61m58p", "0223-201818-urkj98oc"])
+dbutils.widgets.dropdown("shared_single_node_cluster", "0329-145545-rugby794", ["0329-145545-rugby794"])
 
-# # shared workflow clutser id
+# shared workflow clutser id
 # dbutils.widgets.remove("shared_workflow_cluster")
-# dbutils.widgets.dropdown("shared_workflow_cluster", "0223-201027-cmb3huag", ["0223-201818-urkj98oc", "0404-172316-bj61m58p", "0223-201027-cmb3huag"])
+dbutils.widgets.dropdown("shared_workflow_cluster", "0329-145545-rugby794", ["0329-145545-rugby794"])
 
 # COMMAND ----------
 
 # DBTITLE 1,Get Workflow Parameters
-notebook_source = dbutils.widgets.get('source') # source
-shared_single_node_cluster = dbutils.widgets.get('shared_single_node_cluster') # shared_single_node_cluster
-shared_workflow_cluster = dbutils.widgets.get('shared_workflow_cluster') # shared_workflow_cluster
-duplicate_workflows_allowed = dbutils.widgets.get('duplicate_workflows_allowed') # workflow action
-git_branch = dbutils.widgets.get('git_branch') # git branch
+# notebook_source = dbutils.widgets.get('source') # source
+# shared_single_node_cluster = dbutils.widgets.get('shared_single_node_cluster') # shared_single_node_cluster
+# shared_workflow_cluster = dbutils.widgets.get('shared_workflow_cluster') # shared_workflow_cluster
+# duplicate_workflows_allowed = dbutils.widgets.get('duplicate_workflows_allowed') # workflow action
+# git_branch = dbutils.widgets.get('git_branch') # git branch
 
 # COMMAND ----------
 
@@ -54,13 +55,13 @@ file_watcher_scripts_list = ['Delete_Files_On_Completion', 'Create_Files_On_Comp
 
 # create workflow variables if notebook source is git (optional)
 git_provider = "github"
-# git_branch = "feature/wf_Refresh_MCMW"
-git_url = "https://github.com/McKesson-Ontada/dmi-databricks"
+git_branch = "feature/wf_Refresh_MCMD"
+git_url = "https://github.com/robert-altmiller/workflow_automation_optimization"
 
 # create workflow status variable
-# duplicate_workflows_allowed = False # eliminate duplicate workflows
-on_success_email = "pietls@McKesson.com"
-on_failure_email = "pietls@McKesson.com"
+duplicate_workflows_allowed = "False" # eliminate duplicate workflows
+on_success_email = "robert.altmiller@databricks.com"
+on_failure_email = "robert.altmiller@databricks.com"
 pause_status = "PAUSED"
 
 # notebook creation variable
@@ -246,3 +247,7 @@ for file in files:
     else: # could not trigger pipeline
         print(response.content)
         print("Error triggering the pipeline\n")
+
+# COMMAND ----------
+
+
