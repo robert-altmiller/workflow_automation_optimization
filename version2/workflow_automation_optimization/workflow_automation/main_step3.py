@@ -13,10 +13,10 @@ wf_auto_files_valid_fldr_path = "./workflow_automation_files_validated/"
 # COMMAND ----------
 
 # DBTITLE 1,Remove Parameters Text File
-# try:
-#     os.remove(params_filepath)
-#     print(f"removed file: {params_filepath}")
-# except: print(f"unable to remove {params_filepath}")
+try:
+    os.remove(params_filepath)
+    print(f"removed file: {params_filepath}")
+except: print(f"unable to remove {params_filepath}")
 
 # COMMAND ----------
 
