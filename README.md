@@ -88,6 +88,6 @@ The Databricks Workflow Creation Tool has the following features:
 
 ------------------------------------------------------------------------------------------------------------------<br>
 
-One last note is after the workflow is created in Databricks the workflow json configuration will be stored in the 'workflow_json_files' folder.
+One last note is after the workflow is created in Databricks the workflow json configuration will be stored in the 'workflow_json_files --> payload' folder.
 
 ![added_main_functionality3.jpg](/readme_images/added_main_functionality3.jpg)
