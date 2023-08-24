@@ -8,6 +8,7 @@ Automating the creation of 'simple' and 'complex' Databricks workflows can help 
 
 The Databricks Workflow Creation Tool has the following features:
 - Create workflows that can run Notebooks in Github or in the local Databricks workspace.
+- If running workflow from Workspace code will create Notebooks and Directory structures based on the Scripts location path in the Excel template.
 - Create and add custom workflow parameters.
 - Apply group permissions to workflows.
 - Boolean flags enable / disable the creation of duplicate workflows.
