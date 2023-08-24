@@ -54,7 +54,7 @@ print(f"base_directory: {base_directory}")
 file_watcher_scripts_list = ['Delete_Files_On_Completion', 'Create_Files_On_Completion', 'Wait_On_Dependent_Workflow']
 
 # create workflow variables if notebook source is git (optional)
-git_provider = "github"
+git_provider = "github" # or workspace
 git_branch = "feature/wf_Refresh_MCMD"
 git_url = "https://github.com/robert-altmiller/workflow_automation_optimization"
 
@@ -62,7 +62,7 @@ git_url = "https://github.com/robert-altmiller/workflow_automation_optimization"
 duplicate_workflows_allowed = "False" # eliminate duplicate workflows
 on_success_email = "robert.altmiller@databricks.com"
 on_failure_email = "robert.altmiller@databricks.com"
-pause_status = "PAUSED"
+pause_status = "PAUSED" # or ACTIVE
 
 # notebook creation variable
 language = "PYTHON"
