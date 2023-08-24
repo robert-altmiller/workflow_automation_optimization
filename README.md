@@ -21,15 +21,15 @@ The Databricks Workflow Creation Tool has the following features:
 
 - After cloning down or forking the repository the starting Excel template can be found in the following location:
 
-![excel_template_loc.jpg](/readme_images/excel_template_location.jpg)
+![excel_template_loc.jpg](/readme_images/excel_template_loc.jpg)
 
 - The Excel template below needs to be modified for the creation of any new Databricks workflow.  
 - ***IMPORTANT***: Please name the Excel sheet 'API'
 
-![excel_template_mod1.jpg](/readme_images/excel_template_modify1.jpg)
+![excel_template_mod1.jpg](/readme_images/excel_template_mod1.jpg)
 
 ## How to Use the Databricks Workflow Creation Tool
 
 - The code file which creates the Databricks workflow can be found in the following location:
 
-![main_prog.jpg](/readme_images/main_program.jpg)
+![main_prog.jpg](/readme_images/main_prog.jpg)
