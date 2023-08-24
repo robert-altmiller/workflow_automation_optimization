@@ -18,19 +18,47 @@ The Databricks Workflow Creation Tool has the following features:
 - Email alerts are automatically set on workflows if they fail.
 - Workflow cluster is auto assigned using Databricks widgets.
 
+### ***IMPORTANT***: You can run this workflow with the existing Excel workflow template in the Github Repository.  If you want to see the execution before created a 'modified' Excel workflow template you can skip the section below on 'How to Update Workflow Creation Excel Template and go directory to 'How to Use the Databricks Workflow Creation Tool'.
+
 ## How to Update Workflow Creation Excel Template
 
-- After cloning down or forking the repository the starting Excel template can be found in the following location:
+- After cloning down or forking the repository the starting Excel workflow template can be found in the following location
 
 ![excel_template_loc.jpg](/readme_images/excel_template_loc.jpg)
 
-- The Excel template below needs to be modified for the creation of any new Databricks workflow.  
+- The Excel workflow template below needs to be modified for the creation of any new Databricks workflow. 
 - ***IMPORTANT***: Please name the Excel sheet 'API'
 
 ![excel_template_mod1.jpg](/readme_images/excel_template_mod1.jpg)
 
+- After making changes to the Excel workflow template please upload it to the following directory
+
+![excel_template_loc.jpg](/readme_images/excel_template_loc.jpg)
+
 ## How to Use the Databricks Workflow Creation Tool
 
-- The code file which creates the Databricks workflow can be found in the following location:
+- The code file which creates the Databricks workflow can be found in the following location
 
 ![main_prog.jpg](/readme_images/main_prog.jpg)
+
+- The parameters to update in the 'main_step1' notebook are the following:
+
+![main_prog_run2.jpg](/readme_images/main_prog_run2.jpg)
+
+- Update widgets cluster ids for 'shared_workflow_cluster' and 'shared single node' cluster
+
+![main_prog_run1.jpg](/readme_images/main_prog_run1.jpg)
+
+- Change 'git_provider' to 'github' or 'workspace' depending where code needs to be run from.  If value is 'workspace' then variables 'git_branch' and 'git_url' are ignored.
+- Change 'git_branch' and 'git_url' to the appropriate values if using Github for Notebook execution.
+
+- Change 'duplicate_workflows_allowed' to 'True' or 'False' to enable or disable duplicate workflow creation.
+- Change 'on_success_email' and 'on_failure_email' to the appropriate person or group email address for workflow notifications.
+- Change 'pause_status' to 'ACTIVE' or 'PAUSED' to set workflow status after workflow creation is completed.
+
+- Change 'group_name' to the name of the Databricks group who will be able to run and manage the workflow.
+- Change 'permissions_level' to the level of workflow access (e.g. IS_OWNER, CAN_VIEW, CAN_MANAGE, CAN_MANAGE_RUN) for the 'group_name'  
+
+![group_perms.jpg](/readme_images/group_perms.jpg)
+
+![main_prog_run2.jpg](/readme_images/main_prog_run2.jpg)
