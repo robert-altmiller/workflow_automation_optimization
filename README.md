@@ -74,7 +74,8 @@ The Databricks Workflow Creation Tool has the following features:
 
 ![added_main_functionality.jpg.jpg](/readme_images/added_main_functionality.jpg)
 
-- The 'main_step2' notebook is simply used for copying 'parameter.txt' file(s) to a specific DBFS location.  This was only relevant for Informatica workflows.  The idea was that when a workflow would start it would look for the existence of a 'parameter.txt', and if it exists in the DBFS location the workflow would start.  If it did not exist then the workflow would simply wait for that file to be created because another workflow dependecy was finishing up.  Once the dependecy finished it would create the 'parameter.txt' file in DBFS and then the downstream workflow would start.
+<br>
+The 'main_step2' notebook is simply used for copying 'parameter.txt' file(s) to a specific DBFS location.  This was only relevant for Informatica workflows.  The idea was that when a workflow would start it would look for the existence of a 'parameter.txt', and if it exists in the DBFS location the workflow would start.  If it did not exist then the workflow would simply wait for that file to be created because another workflow dependecy was finishing up.  Once the dependecy finished it would create the 'parameter.txt' file in DBFS and then the downstream workflow would start.
 
 This is how the 'parameter.txt' files are using in 'composite' Informatica workflows (WF) running in Databricks:
 
