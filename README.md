@@ -41,13 +41,13 @@ The Databricks Workflow Creation Tool has the following features:
 
 ![main_prog.jpg](/readme_images/main_prog.jpg)
 
-- The parameters to update in the 'main_step1' notebook are the following:
-
-![main_prog_run2.jpg](/readme_images/main_prog_run2.jpg)
-
 - Update widgets cluster ids for 'shared_workflow_cluster' and 'shared single node' cluster
 
 ![main_prog_run1.jpg](/readme_images/main_prog_run1.jpg)
+
+- The parameters to update in the 'main_step1' notebook are the following:
+
+![main_prog_run2.jpg](/readme_images/main_prog_run2.jpg)
 
 - Change 'git_provider' to 'github' or 'workspace' depending where code needs to be run from.  If value is 'workspace' then variables 'git_branch' and 'git_url' are ignored.
 - Change 'git_branch' and 'git_url' to the appropriate values if using Github for Notebook execution.
