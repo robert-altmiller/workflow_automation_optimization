@@ -11,11 +11,24 @@ The Databricks Workflow Creation Tool has the following features:
 - Create and add custom workflow parameters.
 - Apply group permissions to workflows.
 - Boolean flags enable / disable the creation of duplicate workflows.
-- Code Export the workflow configuration in JSON format.
+- Code exports the workflow configuration in JSON format.
+- Workflow Schedule is set in Excel template.
 - Workflow creation input parameters are injected using Excel template.
 - Email alerts are automatically set on workflows if they fail.
-- Workflow Schedule is set in Excel template.
 - Workflow cluster is auto assigned using Databricks widgets.
 
+## How to Update Workflow Creation Excel Template
+
+- After cloning down or forking the repository the starting Excel template can be found in the following location:
+
+![excel_template_location.jpg](/readme_images/excel_template_location.jpg)
+
+- The Excel template below needs to be modified for the creation of any new Databricks workflow.  IMPORTANT: Please name the Excel sheet 'API'
+
+![excel_template_modify1.jpg](/readme_images/excel_template_modify1.jpg)
 
 ## How to Use the Databricks Workflow Creation Tool
+
+- The code file which creates the Databricks workflow can be found in the following location:
+
+![excel_templatemain_program_location.jpg](/readme_images/main_program.jpg)
