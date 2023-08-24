@@ -79,14 +79,14 @@ The Databricks Workflow Creation Tool has the following features:
 - This is how the 'parameter.txt' files are using in 'composite' Informatica workflows (WF) running in Databricks:
 - Start WF1 --> WF1 Finishes --> WF1 Creates param1.txt in DBFS --> Start WF2 if 'param1.txt' exists in DBFS or Wait --> WF2 Finishes --> WF2 Creates param2.txt in DBFS --> More WFs continue....
 
-<br><br>
+<br>
 
 - The 'main_step3' notebook is simply used for cleanup purposes to move the Excel workflow template, and clean up files.
 - The Excel workflow template will be moved from the folder 'workflow_automation_files' into the folder 'workflow_automation_files_validated'.
 
 ![added_main_functionality2.jpg](/readme_images/added_main_functionality2.jpg)
 
-<br><br>
+<br>
 
 One last note is after the workflow is created in Databricks the workflow json configuration will be stored in the 'workflow_json_files' folder.
 
