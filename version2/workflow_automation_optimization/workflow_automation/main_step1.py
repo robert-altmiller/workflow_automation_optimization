@@ -206,7 +206,11 @@ for file in files:
     
     # api call to delete workflow if duplicate_workflows_allowed = False
     if duplicate_workflows_allowed.lower() == "false":
-        job_id = get_workflow_jobid(databricks_instance, databricks_pat, workflowname)
+        # need to try to get job id a couple times because sometimes it returns None from the API
+        for i in range(0, 5):
+          job_id = get_workflow_jobid(databricks_instance, databricks_pat, workflowname)
+          if job_id == None: continue
+          else: break
         response = delete_workflow(databricks_instance, databricks_pat, job_id)
         print(f"Workflow '{workflowname}' deleted successfully: {response}\n") # workflow deletion response
 
