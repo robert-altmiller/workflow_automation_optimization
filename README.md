@@ -61,4 +61,8 @@ The Databricks Workflow Creation Tool has the following features:
 
 ![group_perms.jpg](/readme_images/group_perms.jpg)
 
-![main_prog_run2.jpg](/readme_images/main_prog_run2.jpg)
+- After updating the workflow run parameters like mentioned above you can run the 'main_step1' notebook entirely and then check for the created workflow
+
+![created_workflow1.jpg](/readme_images/created_workflow1.jpg)
+
+![created_workflow2.jpg](/readme_images/created_workflow2.jpg)
