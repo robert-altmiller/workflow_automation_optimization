@@ -2,7 +2,7 @@
 
 Automating the creation of 'simple' and 'complex' Databricks workflows can help with Databrick migrations from Informatica, Oracle, and SQL Server.  Creating and wiring workflows together that execute notebooks to orchestrate the creation, deletion, and updates of data across Bronze, Silver and Gold can be complex and time consuming.  This tool was created originally to help with Informatica Workflow migrations specifically but it has a much wider use with generic Databricks workflow creation.
 
-### Link to Github Repo: https://github.com/robert-altmiller/workflow_automation_optimization
+#### Link to Github Repo: https://github.com/robert-altmiller/workflow_automation_optimization
 
 ## Features of the Databricks Workflow Creation Tool
 
